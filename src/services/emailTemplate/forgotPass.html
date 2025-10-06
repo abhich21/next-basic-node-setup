@@ -1,0 +1,61 @@
+<html>
+  <head> </head>
+  <body style="font-family: 'Public Sans'; font-weight: 500; color: #23272e">
+    <div
+      style="
+        background-color: #ebebeb;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 95%;
+      "
+    >
+      <div
+        style="
+          border-radius: 5px;
+          background-color: #ffffff;
+          padding: 10px;
+          width: 80%;
+          height: 60%;
+        "
+      >
+        <div style="display: flex; justify-content: center">
+          <img
+            style=""
+            height="62px"
+            width="142px"
+            src="https://prepinstaprime.com/static/media/optimus.0e1666d0.webp"
+            alt="optimus prime"
+          />
+        </div>
+        <p style="text-align: justify; font-size: 16px">
+          <span style="font-size: 16px; color: #23272e; margin-bottom: 10px"
+            >Dear {{name}},</span
+          ><br /><br />
+          Follow the below steps to change your password
+        </p>
+
+        <ul
+          style="
+            font-size: 16px;
+            margin-top: 20px;
+            font-weight: 500;
+            color: #23272e;
+          "
+        >
+          <li>Use your one time passcode to reset your password</li>
+        </ul>
+
+        <p style="font-size: 16px">
+          Your password to log in is
+          <span style="font-weight: 500; color: #23272e">{{ password }}</span>
+        </p>
+
+        <p style="margin-top: 8%; color: #23272e">
+          Best regards,<br />PrepInsta Admin
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

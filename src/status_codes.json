@@ -1,0 +1,52 @@
+{
+  "intrnlSrvrErr": {
+    "status": 500,
+    "code": 100,
+    "msg": "Internal Server Error."
+  },
+  "unauth_access": {
+    "status": 401,
+    "code": 101,
+    "msg": "Unauthorized access."
+  },
+  "tokenGenError": {
+    "status": 401,
+    "code": 102,
+    "msg": "Error while generating access token."
+  },
+  "usr_nt_exst": {
+    "status": 404,
+    "code": 103,
+    "msg": "User Not Exists."
+  },
+  "no_token": {
+    "status": 404,
+    "code": 104,
+    "msg": "No Token Provided"
+  },
+  "invalid_token": {
+    "status": 404,
+    "code": 104,
+    "msg": "Invalid Token Provided"
+  },
+  "inactive_user": {
+    "status": 400,
+    "code": 104,
+    "msg": "Your account is inactive. Please contact support."
+  },
+  "deleted_user": {
+    "status": 400,
+    "code": 104,
+    "msg": "This account has been deleted."
+  },
+  "no_pass": {
+    "status": 400,
+    "code": 104,
+    "msg": "No password set. Please login with Firebase."
+  },
+  "todo_nt_found": {
+    "status": 404,
+    "code": 104,
+    "msg": "No Todo Found."
+  }
+}

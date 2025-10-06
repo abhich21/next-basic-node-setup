@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Receipt</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      width: 95%;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .company-info, .footer {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .receipt-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    .receipt-table th, .receipt-table td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: left;
+    }
+    .total-section {
+      margin-top: 20px;
+      width: 100%;
+    }
+    .total-section .receipt-table {
+      width: 100%;
+    }
+    .footer {
+      text-align: left;
+      font-size: 10px;
+      color: #888888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img style="width: 200px;" src="https://prepinsta.com/wp-content/themes/prepinsta-2020/images/PrepInstaxAddaEducation-Black.svg" alt="Adda247 Logo">
+    </div>
+    <div class="company-info">
+      <h2>Metis Eduventures Private Limited</h2>
+      <p>CIN No: U80902DL2012PTC231608</p>
+      <p>Head Office: 207A-208, 2nd Floor, Tower A, Unitech Cyber Park, Sector 39, Gurugram, Haryana-122001</p>
+    </div>
+    <h3>Receipt</h3>
+    <table class="receipt-table">
+      <tr>
+        <th>Name of Student:</th>
+        <td>{{ student_name }}</td>
+        <th>GSTIN:</th>
+        <td>06AAHCM7263M1ZZ</td>
+      </tr>
+      <tr>
+        <th>Payment ID:</th>
+        <td>{{ payment_id }}</td>
+        <th>Payment Date:</th>
+        <td>{{ payment_date }}</td>
+      </tr>
+    </table>
+    <table class="receipt-table">
+      <thead>
+        <tr>
+          <th>Description of Product / Service</th>
+          <th>Quantity</th>
+          <th>Taxable Value</th>
+          <th>CGST Rate</th>
+          <th>CGST Amount</th>
+          <th>SGST Rate</th>
+          <th>SGST Amount</th>
+          <th>Amount Received (Rs.)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Prepinsta Prime Subscription, <br> Duration - {{ duration_number }} {{ duration_unit }}</td>
+          <td>1</td>
+          <td>{{ taxable_value }}</td>
+          <td>9.0%</td>
+          <td>{{ cgst_amount }}</td>
+          <td>9.0%</td>
+          <td>{{ sgst_amount }}</td>
+          <td>{{ total_received }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="total-section">
+      <table class="receipt-table">
+        <tr>
+          <td style="text-align: center; width: 50%; vertical-align: top;">
+            <p>Certified that the particulars given above are true and correct.</p>
+            <p><strong>Mode of Payment:</strong> Online</p>
+          </td>
+          <td style="text-align: right; width: 50%; vertical-align: top;">
+            <p><strong>Total Amount Before Tax: </strong>{{ taxable_value }}</p>
+            <p><strong>Add: CGST: </strong>{{ cgst_amount }}</p>
+            <p><strong>Add: SGST: </strong>{{ sgst_amount }}</p>
+            <p><strong>Add: IGST: </strong>0.00</p>
+            <p><strong>Total Amount: GST: </strong>{{ total_gst_amount }}</p>
+            <p><strong>Total Amount After Tax: </strong>{{ total_received }}</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="footer">
+      <p><strong>This is a computer-generated receipt and does not require any signature.</strong></p>
+      <p><strong>I agree to the product terms and that the amount paid is not refundable.</strong></p>
+      <p><strong>Decision of management will be final and binding in all matters.</strong></p>
+    </div>
+  </div>
+</body>
+</html>

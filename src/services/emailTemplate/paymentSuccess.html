@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            width: 800px;
+            margin: auto;
+            font-family: montserrat-bold;
+        }
+
+        .prime_mail_head {
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .prime_mail_para {
+            font-size: 15px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 1px;
+            line-height: 30px;
+            text-transform: none;
+            color: #454545;
+            word-spacing: 1px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .prime_mail_para a:link,
+        .prime_mail_para a:visited,
+        .prime_mail_para a:hover,
+        .prime_mail_para a:active {
+            color: #3789f1 !important;
+            text-decoration: none;
+        }
+
+        .prime_mail_space_10 {
+            padding: 10px 0;
+        }
+
+        .prime_mail_space_20 {
+            padding: 10px 0;
+        }
+
+        .prime_mail_space_30 {
+            padding: 15px 0;
+        }
+
+        .prime_mail_table_box {
+            padding: 45px 60px 45px;
+            border-radius: 20px;
+            background-image: url('images/box01.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 103% 100%;
+        }
+
+        .prime_mail_social_icon {
+            object-fit: contain;
+            padding: 0 2px 0 0;
+            max-width: 30px;
+            margin-left: 2px;
+            margin-right: 2px;
+            width: 30px;
+            height: 30px;
+        }
+
+        .prime_mail_socialLinks {
+            padding: 50px 0;
+        }
+
+        .prime_mail_blue_btn {
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Poppins', Helvetica, Arial, sans-serif;
+        }
+
+        .prime_mail_blue_btn.sml_btn {
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        .prime_mail_total {
+            font-size: 20px;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 28px;
+            text-transform: none;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            padding-bottom: 20px;
+            font-family: 'Poppins', Helvetica, Arial, sans-serif;
+            color: #000;
+        }
+
+        .prime_mail_items_table {
+            border: 1px solid #707070;
+            width: 800px;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            margin-bottom: 80px;
+        }
+
+        .prime_mail_items_table td,
+        .prime_mail_items_table th {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .prime_mail_font_primary {
+            font-size: 14px;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 26px;
+            text-transform: none;
+            padding: 0;
+            margin: 10px auto;
+            font-family: 'Poppins', Helvetica, Arial, sans-serif;
+            color: #616161;
+            text-align: center;
+        }
+
+        .prime_mail_bottm_content {
+            font-size: 13px;
+            font-style: normal;
+            letter-spacing: 1px;
+            line-height: 20px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .new-gst-table {
+            border: 1px solid black;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            max-width: 150px;
+        }
+
+        .company-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .receipt-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .receipt-table th, .receipt-table td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .total-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #888888;
+        }
+
+        .amount {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <table border="0" cellpadding="0" cellspacing="0" id="bodyTable" style="max-width: 800px;">
+            <tbody>
+                <tr>
+                    <td align="center" valign="top" id="bodyCell">
+                        <tr>
+                            <td align="center" valign="top">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="tableCard">
+                                    <tbody>
+                                        <tr>
+                                            <td class="prime_mail_space_20"></td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" valign="top">
+                                                <img src="{{prime_url}}wp-content/themes/TwentyTwentyChild/email/images/new-order-completed.png" class="img-responsive" width="100%">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="prime_mail_table_box">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <h2 class="prime_mail_head">Hey Prepster,</h2>
+                                                <p class="prime_mail_para">With lots of Love, we are hoping this course helps you a lot in your preparation journey.</p>
+                                                <p class="prime_mail_para">Below are the steps mentioned to access your course.</p>
+                                                <p class="prime_mail_para">You can check all courses that you've access to here - <a href="https://prepinstaprime.com/">https://prepinstaprime.com/</a></p>
+                                                <p class="prime_mail_para">Learn how to access PrepInstaPrime course - <a href="https://prepinsta.com/how-to-access-prepinsta-prime/">Click Here</a></p>
+                                                <p class="prime_mail_para">You can also access mocks on Prepinsta.com as well check how here - <a href="https://prepinsta.com/my-account/orders">https://prepinsta.com/my-account/orders</a></p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table border="0" cellpadding="0" cellspacing="0" class="tableButton">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" style="padding: 10px;border-radius: 5px;font-size: 15px;background-color: #3789f1;background: #3789f1;color:#FFF;">
+                                                <a class="prime_mail_blue_btn" href="{{prime_url}}wp-content/themes/TwentyTwentyChild/email/how-to-access.pdf" download="download" style="color:#FFF;">
+                                                    How to Access</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="prime_mail_space_20">&nbsp;</td>
+                        </tr>
+                        <div class="container">
+                            <div class="header">
+                               <img style="width: 200px;" src="https://optimus-files.prepinstaprime.com/media/file_1752063746894_k.png" alt="Adda247 Logo">
+                            </div>
+                            <div class="company-info">
+                                <h2>Metis Eduventures Private Limited</h2>
+                                <p>CIN No: U80902DL2012PTC231608</p>
+                                <p>Head Office: 207A-208, 2nd Floor, Tower A, Unitech Cyber Park, Sector 39, Gurugram, Haryana-122001</p>
+                            </div>
+                            <h3>Receipt</h3>
+                            <table class="receipt-table">
+                                <tr>
+                                    <th>Name of Student:</th>
+                                    <td>{{ student_name }}</td>
+                                    <th>GSTIN:</th>
+                                    <td>06AAHCM7263M1ZZ</td>
+                                </tr>
+                                <tr>
+                                    <th>Payment ID:</th>
+                                    <td>{{ payment_id }}</td>
+                                    <th>Payment Date:</th>
+                                    <td>{{ payment_date }}</td>
+                                </tr>
+                            </table>
+                            <table class="receipt-table">
+                                <thead>
+                                    <tr>
+                                        <th>Description of Product / Service</th>
+                                        <th>Quantity</th>
+                                        <th>Taxable Value</th>
+                                        <th>CGST Rate</th>
+                                        <th>CGST Amount</th>
+                                        <th>SGST Rate</th>
+                                        <th>SGST Amount</th>
+                                        <th>Amount Received (Rs.)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Prepinsta Prime Subscription</td>
+                                        <td>1</td>
+                                        <td>{{ taxable_value }}</td>
+                                        <td>9.0%</td>
+                                        <td>{{ cgst_amount }}</td>
+                                        <td>9.0%</td>
+                                        <td>{{ sgst_amount }}</td>
+                                        <td>{{ total_received }}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="total-section">
+                                <table class="receipt-table" style="width: 100%;">
+                                    <tr>
+                                        <td style="text-align: center; width: 50%; vertical-align: top;">
+                                            <p>Certified that the particulars given above are true and correct.</p>
+                                            <p><strong>Mode of Payment:</strong> Online</p>
+                                        </td>
+                                        <td style="text-align: right; width: 50%; vertical-align: top;">
+                                            <p><strong>Total Amount Before Tax: </strong>{{ taxable_value }}</p>
+                                            <p><strong>Add: CGST: </strong>{{ cgst_amount }}</p>
+                                            <p><strong>Add: SGST: </strong>{{ sgst_amount }}</p>
+                                            <p><strong>Add: IGST: </strong>0.00</p>
+                                            <p><strong>Total Amount: GST: </strong>{{total_gst_amount}}</p>
+                                            <p><strong>Total Amount After Tax: </strong>{{ total_received }}</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="footer">
+                                <p><strong>This is a computer-generated receipt and does not require any signature.</strong></p>
+                                <p><strong>I agree to the product terms and that the amount paid is not refundable.</strong></p>
+                                <p><strong>Decision of management will be final and binding in all matters.</strong></p>
+                            </div>
+                        </div>
+
+                        <!-- Additional Section for Social Media & Other Info -->
+                        <table border="0" cellpadding="0" cellspacing="0" style="margin-top: 30px;">
+                            <tbody>
+                               <tr>
+                                  <td align="center" valign="top">
+                                     <a href="{{prime_url}}wp-content/themes/TwentyTwentyChild/email/how-to-access.pdf">
+                                        <img src="{{prime_url}}wp-content/themes/TwentyTwentyChild/email/images/new-how-to-access.png" class="img-responsive">
+                                     </a>
+                                  </td>
+                               </tr>
+                               <tr>
+                                  <td class="prime_mail_space_20">&nbsp;</td>
+                               </tr>
+                            </tbody>
+                        </table>
+
+                        <table border="0" cellpadding="0" cellspacing="0" style="margin-top: 30px;max-width: 800px;width: 800px;">
+                            <tbody>
+                               <tr>
+                                  <td>
+                                     <h2 class="prime_mail_head">Get OffCampus Updates</h2>
+                                     <p class="prime_mail_para">More than 30+ companies will be hiring this month in partnership with Prepinsta. Well since students do not open PrepInsta daily so you may miss when lets say Microsoft or TCS etc are hiring so join us on our social media.</p>
+                                     <p class="prime_mail_para">Like Instagram, WhatsApp, LinkedIn, Telegram etc. Links are give below -</p>
+                                  </td>
+                               </tr>
+                               <tr>
+                                  <td align="center" valign="top" class="prime_mail_socialLinks">
+                                     <a href="{{ whatsapp_link }}" target="_blank">
+                                        <img src="{{prime_url}}wp-content/themes/TwentyTwentyChild/email/images/whatsapp.png" class="prime_mail_social_icon" alt="Whatsapp"></a>
+                                     <a href="{{ telegram_link }}" target="_blank">
+                                        <img src="{{prime_url}}wp-content/themes/TwentyTwentyChild/email/images/telegram.png" class="prime_mail_social_icon" alt="Telegram"></a>
+                                     <a href="{{ twitter_link }}" target="_blank">
+                                        <img src="{{prime_url}}wp-content/themes/TwentyTwentyChild/email/images/twitter2.png" class="prime_mail_social_icon" alt="Twitter"></a>
+                                     <a href="{{ instagram_link }}" target="_blank">
+                                        <img src="{{prime_url}}wp-content/themes/TwentyTwentyChild/email/images/instagram2.png" class="prime_mail_social_icon" alt="Instagram"></a>
+                                     <a href="{{ linkedin_link }}" target="_blank">
+                                        <img src="{{prime_url}}wp-content/themes/TwentyTwentyChild/email/images/linkedin.png" class="prime_mail_social_icon" alt="LinkedIn"></a>
+                                     <a href="{{ facebook_link }}" target="_blank">
+                                        <img src="{{prime_url}}wp-content/themes/TwentyTwentyChild/email/images/facebook2.png" class="prime_mail_social_icon" alt="Facebook"></a>
+                                     <a href="{{ youtube_link }}" target="_blank">
+                                        <img src="{{prime_url}}wp-content/themes/TwentyTwentyChild/email/images/youtube.png" class="prime_mail_social_icon" alt="YouTube"></a>
+                                     <p class="prime_mail_para">Reach out to us at <a href="mailto:{{ support_link }}">support@prepinsta.com</a> for any queries</p>
+                                  </td>
+                               </tr>
+
+                             <tr>
+                                <td>
+                                   <h2 class="prime_mail_head">One Last Thing</h2>
+                                   <p class="prime_mail_para">We at PrepInsta work really hard to see many many successful stories of students each and every years. Meet our team as well below, we are 100+ hardworking people working to provide you with the best.</p>
+                                </td>
+                             </tr>
+                             <tr>
+                                <td class="prime_mail_space_30">&nbsp;</td>
+                             </tr>
+                            <!-- space start -->
+                            <tr>
+                                <td align="center" valign="top">
+                                <img src="{{prime_url}}wp-content/themes/TwentyTwentyChild/email/images/footer-team.png" class="img-responsive" width="100%">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top" class="prime_mail_socialLinks">
+                                <a href="{{ whatsapp_link }}" target="_blank" style="display: inline-block;">
+                                    <img src="{{prime_url}}wp-content/themes/TwentyTwentyChild/email/images/whatsapp.png" class="prime_mail_social_icon" alt="Whatsapp"></a>
+                                <a href="{{ telegram_link }}" target="_blank" style="display: inline-block;">
+                                    <img src="{{prime_url}}wp-content/themes/TwentyTwentyChild/email/images/telegram.png" class="prime_mail_social_icon" alt="Telegram"></a>
+                                <a href="{{ twitter_link }}" target="_blank">
+                                    <img src="{{prime_url}}wp-content/themes/TwentyTwentyChild/email/images/twitter2.png" class="prime_mail_social_icon" alt="Twitter" width="30"></a>
+                                <a href="{{ instagram_link }}" target="_blank">
+                                    <img src="{{prime_url}}wp-content/themes/TwentyTwentyChild/email/images/instagram2.png" class="prime_mail_social_icon" alt="Instagram"></a>
+                                <a href="{{ linkedin_link }}" target="_blank">
+                                    <img src="{{prime_url}}wp-content/themes/TwentyTwentyChild/email/images/linkedin.png" class="prime_mail_social_icon" alt="Pinterest"></a>
+                                <a href="{{ facebook_link }}" target="_blank">
+                                    <img src="{{prime_url}}wp-content/themes/TwentyTwentyChild/email/images/facebook2.png" class="prime_mail_social_icon" alt="Facebook"></a>
+                                <a href="{{ youtube_link }}" target="_blank">
+                                    <img src="{{prime_url}}wp-content/themes/TwentyTwentyChild/email/images/youtube.png" class="prime_mail_social_icon" alt="Youtube"></a>
+                                <p class="prime_mail_para">Reach out to us on support <a href="mailto:<?php echo $support_link; ?>"> support@prepinsta.com</a> in case of any queries</p>
+                                </td>
+                            </tr>
+                            <!-- space start -->
+                            <tr>
+                                <td class="prime_mail_space_30">&nbsp;</td>
+                            </tr>
+                            <!-- space start -->
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </center>
+</body>
+</html>
